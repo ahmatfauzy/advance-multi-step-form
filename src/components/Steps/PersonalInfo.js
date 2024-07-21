@@ -64,7 +64,7 @@ export default function PersonalInfo({ setFlowValidity, formFlow }) {
     >
       <TextForm
         label="Name"
-        placeholder="Stephen King"
+        placeholder="Ahmat Fauzi"
         value={personalInfoForm.name}
         onChange={handleNameChange}
         type="text"
@@ -73,7 +73,7 @@ export default function PersonalInfo({ setFlowValidity, formFlow }) {
       />
       <TextForm
         label="Email"
-        placeholder="steph@gmail.com"
+        placeholder="contoh@gmail.com"
         value={personalInfoForm.email}
         onChange={handleEmailChange}
         type="email"
@@ -82,7 +82,7 @@ export default function PersonalInfo({ setFlowValidity, formFlow }) {
       />
       <TextForm
         label="Phone Number"
-        placeholder="+234 810 332 3332"
+        placeholder="+62838 9028 6524"
         value={personalInfoForm.phone}
         onChange={handlePhoneChange}
         type="tel"
