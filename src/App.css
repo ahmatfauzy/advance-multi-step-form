@@ -1,0 +1,67 @@
+@import "./styles/typo.css";
+@import "./styles/variables.css";
+@import "./styles/generic.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.app {
+  display: flex;
+  align-items: start;
+  height: 100vh;
+  width: 100vw;
+  min-height: min-content;
+}
+
+@media screen and (min-width: 980px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 16px;
+  }
+
+  #root {
+    width: 100%;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 274px 1fr 5fr 1fr;
+    grid-template-rows: auto auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 100vh;
+    min-height: 100vh;
+    grid-template-areas: "header ... form ..." "header ... footer ...";
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 940px;
+    max-height: 700px;
+    border-radius: 15px;
+    min-height: unset;
+    width: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-body {
+    grid-area: form;
+  }
+
+  .form-footer {
+    grid-area: footer;
+    align-self: end;
+  }
+
+  .form-header {
+    grid-area: header;
+  }
+}

@@ -1,0 +1,89 @@
+.finish-up {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--very-light-grey);
+  border-radius: 8px;
+}
+
+.finish-up__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.name__scheme {
+  text-transform: capitalize;
+}
+
+.name__action {
+  border: none;
+  background-color: none;
+  background: none;
+  width: fit-content;
+  padding: 0;
+  text-decoration: underline;
+  color: var(--grey);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.name__action:hover {
+  color: var(--purple);
+}
+
+.plan__price {
+  color: var(--denim);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.finish-up__add-ons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: solid 1px rgba(150, 153, 170, 0.2);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+.add-on {
+  font-size: 14px;
+  color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-on__price {
+  color: var(--denim);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.finish-up__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin-top: 8px;
+}
+
+.total__text {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.total__price {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 16px;
+}

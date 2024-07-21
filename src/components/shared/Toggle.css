@@ -1,0 +1,68 @@
+.toggle {
+  margin-top: 10px;
+  display: block;
+  background-color: var(--very-light-grey);
+  border: solid 1px var(--very-light-grey);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  border-color: var(--purple);
+}
+
+.toggle__checkbox {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.toggle__checkbox:not(:checked) ~ .toggle__off {
+  color: var(--denim);
+}
+
+.toggle__checkbox:checked ~ .toggle__on {
+  color: var(--denim);
+}
+
+.toggle__checkbox:checked ~ .toggle__wrapper .wrapper__switch {
+  transform: translateX(18px);
+}
+
+.toggle__wrapper {
+  height: 20px;
+  width: 38px;
+  background-color: var(--denim);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 4px;
+}
+
+.wrapper__switch {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  display: block;
+  background-color: white;
+  transition: transform 300ms;
+}
+
+.toggle__text {
+  margin: 0;
+  font-weight: medium;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+  color: var(--grey);
+  margin: 0;
+}

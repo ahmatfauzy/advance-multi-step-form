@@ -1,0 +1,61 @@
+.text-form {
+  position: relative;
+}
+
+.text-form__label {
+  color: var(--denim);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 3px;
+  display: block;
+}
+
+.text-form__error {
+  color: var(--error);
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+.text-form__input {
+  border: solid 1px var(--light-grey);
+  height: 40px;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--denim);
+}
+
+.text-form__input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.text-form__input.error {
+  border-color: var(--error);
+}
+
+.text-form__input::placeholder {
+  color: var(--grey);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 980px) {
+  .text-form__label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .text-form__input {
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+  }
+}
